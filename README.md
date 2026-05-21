@@ -115,19 +115,7 @@ http://127.0.0.1:8000/redoc
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome. Feel free to fork and improve this project.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
 ## 👨‍💻 Author
 
 Your Name  
-GitHub: https://github.com/your-username
+GitHub: https://github.com/linuschoudhary
