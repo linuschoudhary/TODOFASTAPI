@@ -45,8 +45,8 @@ ToDo/
 ## ⚙️ Installation
 
 ### Clone the repository
-git clone https://github.com/your-username/todo-fastapi.git
-cd todo-fastapi
+git clone https://github.com/linuschoudhary/todofastapi.git
+cd todofastapi
 
 ### Create virtual environment
 python -m venv todo-env
