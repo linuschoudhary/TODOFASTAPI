@@ -1,7 +1,9 @@
 from fastapi import FastAPI,HTTPException
-from Database.sqlitedb import addTask,showTask,updateTaskStatus,updateTaskToDo,deleteTask,resetTask,selectSingleToDo
+# from Database.sqlitedb import addTask,showTask,updateTaskStatus,updateTaskToDo,deleteTask,resetTask,selectSingleToDo
 from fastapi.responses import JSONResponse
 from schema.todo_list_format import TodoDetails,status_data,todo_data
+from Database.alchemy import addTask,showTask,updateTaskStatus,updateTaskToDo,deleteTask,resetTask,selectSingleToDo
+
 
 app = FastAPI()
 
@@ -24,7 +26,7 @@ def showOneToDo(todo_id):
             return result
         raise HTTPException(status_code= 404, detail= "ID does not exists.")
     except Exception as e:
-        raise HTTPException(status_code= 400, detail= "Cannot connect with the database.")
+        raise HTTPException(status_code= 400, detail= f"{e}")
 
 
 
